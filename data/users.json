@@ -1,0 +1,178 @@
+[
+    {
+        "username": "user1",
+        "name": "Alice",
+        "followers": ["user2", "user5"],
+        "following": ["user3", "user4"],
+        "posts": [
+            {
+                "text": "Enjoying a sunny day!",
+                "imageURL": "",
+                "likes": 5,
+                "comments": ["Looks nice!", "What a great day!"]
+            },
+            {
+                "text": "My favorite book",
+                "imageURL": "",
+                "likes": 2,
+                "comments": ["I love that book too!", "Amazing read!"]
+            }
+        ]
+    },
+    {
+        "username": "user2",
+        "name": "Bob",
+        "followers": ["user3", "user4"],
+        "following": ["user1", "user5"],
+        "posts": [
+            {
+                "text": "Had a great workout!",
+                "imageURL": "",
+                "likes": 10,
+                "comments": ["Good job!", "Keep it up!"]
+            },
+            {
+                "text": "The best coffee ever!",
+                "imageURL": "",
+                "likes": 3,
+                "comments": ["Where did you get it?", "Love coffee!"]
+            }
+        ]
+    },
+    {
+        "username": "user3",
+        "name": "Charlie",
+        "followers": ["user1", "user6"],
+        "following": ["user2", "user7"],
+        "posts": [
+            {
+                "text": "Mountain biking is my passion.",
+                "imageURL": "",
+                "likes": 15,
+                "comments": ["So cool!", "Wish I could join!"]
+            }
+        ]
+    },
+    {
+        "username": "user4",
+        "name": "Diana",
+        "followers": ["user5", "user7"],
+        "following": ["user3", "user6"],
+        "posts": [
+            {
+                "text": "Just finished a painting.",
+                "imageURL": "",
+                "likes": 8,
+                "comments": ["That looks amazing!", "You're so talented!"]
+            },
+            {
+                "text": "Baking cookies today!",
+                "imageURL": "",
+                "likes": 12,
+                "comments": ["Can I have some?", "Yum!"]
+            }
+        ]
+    },
+    {
+        "username": "user5",
+        "name": "Eva",
+        "followers": ["user4", "user1"],
+        "following": ["user2", "user8"],
+        "posts": [
+            {
+                "text": "Beautiful sunset at the beach!",
+                "imageURL": "",
+                "likes": 20,
+                "comments": ["Wow!", "That view is amazing!"]
+            }
+        ]
+    },
+    {
+        "username": "user6",
+        "name": "Frank",
+        "followers": ["user3", "user8"],
+        "following": ["user4", "user9"],
+        "posts": [
+            {
+                "text": "Coding late at night...",
+                "imageURL": "",
+                "likes": 7,
+                "comments": ["You go, Frank!", "I feel you!"]
+            },
+            {
+                "text": "Love hiking in the woods.",
+                "imageURL": "",
+                "likes": 14,
+                "comments": ["Looks peaceful!", "Nature is the best!"]
+            }
+        ]
+    },
+    {
+        "username": "user7",
+        "name": "Grace",
+        "followers": ["user9", "user10"],
+        "following": ["user3", "user1"],
+        "posts": [
+            {
+                "text": "Just finished reading a great novel.",
+                "imageURL": "",
+                "likes": 6,
+                "comments": ["Which one?", "I love reading too!"]
+            }
+        ]
+    },
+    {
+        "username": "user8",
+        "name": "Henry",
+        "followers": ["user5", "user7"],
+        "following": ["user6", "user10"],
+        "posts": [
+            {
+                "text": "Loving the new bike I got!",
+                "imageURL": "",
+                "likes": 9,
+                "comments": ["Great choice!", "Ride safe!"]
+            },
+            {
+                "text": "Pizza for dinner!",
+                "imageURL": "",
+                "likes": 11,
+                "comments": ["Yum!", "Best dinner ever!"]
+            }
+        ]
+    },
+    {
+        "username": "user9",
+        "name": "Isla",
+        "followers": ["user6", "user10"],
+        "following": ["user7", "user8"],
+        "posts": [
+            {
+                "text": "Just bought a new camera!",
+                "imageURL": "",
+                "likes": 13,
+                "comments": ["Can't wait to see your photos!", "That's awesome!"]
+            }
+        ]
+    },
+    {
+        "username": "user10",
+        "name": "Jack",
+        "followers": ["user9", "user8"],
+        "following": ["user7", "user2"],
+        "posts": [
+            {
+                "text": "Starting my fitness journey!",
+                "imageURL": "",
+                "likes": 18,
+                "comments": ["Good luck!", "You got this!"]
+            },
+            {
+                "text": "Weekend vibes!",
+                "imageURL": "",
+                "likes": 4,
+                "comments": ["Enjoy!", "Relax!"]
+            }
+        ]
+    }
+]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Purchase</title>
+    <link rel="stylesheet" href="../Philatic.css">
+</head>
+<body>
+    <header>
+        <h1>Complete Your Purchase</h1>
+    </header>
+
+    <div class="container">
+        <div class="purchase-section">
+            <h2>Order Details</h2>
+            <form id="orderForm">
+                <input type="text" id="buyerName" placeholder="Your Name" required>
+                <input type="text" id="buyerAddress" placeholder="Delivery Address" required>
+                <input type="text" id="buyerPhone" placeholder="Phone Number" required>
+                <input type="hidden" id="stampIndex">
+                <input type="hidden" id="stampName">
+                <input type="hidden" id="stampPrice">
+                <button type="submit">Confirm Purchase</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../purchase.js"></script>
+</body>
+</html>

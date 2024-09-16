@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../css/stamps.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Payment</h1>
+        <nav>
+            <a href=".//payment.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Payment Section -->
+    <section id="payment-section">
+        <h2>Complete Your Purchase</h2>
+        <p>Thank you for your order. Please proceed to complete your payment.</p>
+        <!-- Payment gateway integration can be done here -->
+        <button onclick="confirmOrder()">Confirm Payment</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 India Postal Circles</p>
+    </footer>
+
+    <script>
+        function confirmOrder() {
+            alert('Payment confirmed! Thank you for your purchase.');
+            window.location.href = 'index.html'; // Redirect back to home after payment
+        }
+    </script>
+</body>
+</html>

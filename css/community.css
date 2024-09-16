@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../data/ruby.avif");
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: #4a4647;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.user-info button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.user-info button:hover {
+    background-color: #0056b3;
+}
+.user-list {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.user-list ul {
+    list-style: none;
+    padding: 0;
+}
+.user-list ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.search-box {
+    margin-bottom: 20px;
+}
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.post-box {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.post-box input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.post-box input[type="file"] {
+    margin-top: 10px;
+}
+.post-box button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.post-box button:hover {
+    background-color: #45a049;
+}
+.post {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.post img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.post h4 {
+    margin-bottom: 5px;
+}
+.post .like-btn, .post .comment-btn, .post .share-btn {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.post .like-btn:hover, .post .comment-btn:hover, .post .share-btn:hover {
+    background-color: #0056b3;
+}
+.comments-section {
+    margin-top: 10px;
+}
+.comments-section input {
+    width: calc(100% - 22px);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}

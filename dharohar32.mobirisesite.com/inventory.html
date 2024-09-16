@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamp Inventory</title>
+    <link rel="stylesheet" href="../css/Philatic.css">
+    <link rel="stylesheet" href="../css/dummyPayment.css"> <!-- Add this line -->
+</head>
+<body>
+    <header>
+        <!-- <h1>Your Stamp Collection</h1> -->
+        <!-- Sorting Dropdown -->
+        <div class="sorting-section">
+            <label for="filterType">Sort by:</label>
+            <select id="filterType" onchange="filterInventory()">
+                <option value="all">All Items</option>
+                <option value="showcase">Showcase Only</option>
+                <option value="buy-sell">Buy/Sell</option>
+            </select>
+        </div>
+    </header>
+
+    <button class="back-button" onclick="goBack()">Back</button> <!-- Back button added -->
+
+    <div class="container">
+        <div class="inventory-grid" id="inventoryContainer">
+            <!-- Inventory items will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePurchaseModal()">&times;</span>
+            <h2>Purchase Stamp</h2>
+            <form id="purchaseForm">
+                <input type="text" id="buyerName" placeholder="Your Name" required>
+                <input type="text" id="buyerAddress" placeholder="Delivery Address" required>
+                <input type="text" id="buyerPhone" placeholder="Phone Number" required>
+                <select id="paymentMethod" required>
+                    <option value="" disabled selected>Select Payment Method</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="net-banking">Net Banking</option>
+                </select>
+                <input type="hidden" id="stampNameModal">
+                <input type="hidden" id="stampPriceModal">
+                <button type="button" onclick="openDummyPaymentModal()">Confirm Purchase</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dummy Payment Modal -->
+    <div id="dummyPaymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDummyPaymentModal()">&times;</span>
+            <h2>Payment Gateway</h2>
+            <div class="payment-methods">
+                <label>
+                    <input type="radio" name="paymentMethod" value="credit-card" checked>
+                    Credit/Debit Card
+                </label>
+                <label>
+                    <input type="radio" name="paymentMethod" value="net-banking">
+                    Net Banking
+                </label>
+                <label>
+                    <input type="radio" name="paymentMethod" value="upi">
+                    UPI
+                </label>
+            </div>
+            <div class="payment-details">
+                <!-- For Credit/Debit Card -->
+                <div id="creditCardDetails" class="payment-detail-section">
+                    <input type="text" placeholder="Card Number" required>
+                    <input type="text" placeholder="Expiry Date (MM/YY)" required>
+                    <input type="text" placeholder="CVV" required>
+                </div>
+                <!-- For Net Banking -->
+                <div id="netBankingDetails" class="payment-detail-section" style="display: none;">
+                    <select>
+                        <option value="" disabled selected>Select Bank</option>
+                        <option value="bank1">Kotak Bank of Kolkata</option>
+                        <option value="bank2">ICICI Bank of India</option>
+                        <option value="bank3">Unisys Bank of Baroda</option>
+                    </select>
+                </div>
+                <!-- For UPI -->
+                <div id="upiDetails" class="payment-detail-section" style="display: none;">
+                    <input type="text" placeholder="UPI ID" required>
+                </div>
+            </div>
+            <button id="payNowButton" onclick="completePayment()">Pay Now</button>
+        </div>
+    </div>
+
+    <script src="../inventory.js"></script>
+    <script src="../dummyPayment.js"></script> <!-- Add this line -->
+    <script>
+        // Go back function for the back button
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

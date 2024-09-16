@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamp Collection - Main Page</title>
+    <link rel="stylesheet" href="../css/Philatic.css">
+</head>
+<body>
+    <!-- <header>
+        <h1>Welcome to the Stamp Collection Platform</h1>
+    </header> -->
+
+    <div class="container">
+        <h1>Welcome to the Stamp Collection Platform</h1>
+        <h2>Upload Your Stamp Collection 🔁</h2>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <label for="stampName">Stamp Name</label>
+            <input type="text" id="stampName" placeholder="Stamp Name">
+            
+            <label for="stampDescription">Stamp Description</label>
+            <input type="text" id="stampDescription" placeholder="Description">
+            
+            <label for="stampPrice">Price (Optional)</label>
+            <input type="number" id="stampPrice" placeholder="Price (Optional)">
+            
+            <label for="stampImage">Upload Image</label>
+            <input type="file" id="stampImage">
+            
+            <label for="collectionType">Collection Type</label>
+            <select id="collectionType">
+                <option value="showcase">Showcase Only</option>
+                <option value="buy-sell">Buy/Sell</option>
+            </select>
+            
+            <button onclick="uploadStamp()">Upload Stamp</button>
+        </div>
+
+        <!-- Inventory Action Section -->
+         <br>
+        <div class="inventory-actions">
+            <button onclick="redirectToInventory()">View Inventory</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
